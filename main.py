@@ -15,3 +15,8 @@ with col2:
     In mijn vrije tijd hou ik me bezig met cursussen programmeren.
     """
     st.info(content)
+
+content2 = """
+Hieronder vind je enkele Apps die ik reeds heb gemaakt met Python-code. 
+Voel je vrij mij te contacteren!"""
+st.write(content2)
