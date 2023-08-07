@@ -29,15 +29,16 @@ df = pandas.read_csv("data.csv", sep=";")
 
 with col3:
     #for index, row in df[:10].iterrows():
-    for index, row in df[:2].iterrows():
+    for index, row in df[:1].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"], width=350)
         st.write(f"[Ga naar project]({row['url']})")
 
-#with col4:
+with col4:
     #for index, row in df[10:].iterrows():
-        #st.header(row["title"])
-        #st.write(row["description"])
-        #st.image("images/" + row["image"], width=350)
-        #st.write(f"[Ga naar project]({row['url']})")
+    for index, row in df[1:2].iterrows():
+        st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"], width=350)
+        st.write(f"[Ga naar project]({row['url']})")
