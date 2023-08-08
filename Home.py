@@ -33,7 +33,7 @@ with col3:
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"], width=350)
-        st.write(f"[Ga naar project]({row['url']})")
+        st.write(f"[Ga naar project (Github account nodig)]({row['url']})")
 
 with col4:
     #for index, row in df[10:].iterrows():
@@ -41,4 +41,4 @@ with col4:
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"], width=350)
-        st.write(f"[Ga naar project(Github account nodig)]({row['url']})")
+        st.write(f"[Ga naar project (Github account nodig)]({row['url']})")
