@@ -41,4 +41,4 @@ with col4:
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"], width=350)
-        st.write(f"[Ga naar project (App broncode)]({row['url']})")
+        st.write(f"[Ga naar project (App broncode.)]({row['url']})")
