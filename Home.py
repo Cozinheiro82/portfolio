@@ -29,7 +29,7 @@ df = pandas.read_csv("data.csv", sep=";")
 
 with col3:
     #for index, row in df[:10].iterrows():
-    for index, row in df[:3].iterrows():
+    for index, row in df[:4].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"], width=350)
@@ -37,7 +37,7 @@ with col3:
 
 with col4:
     #for index, row in df[10:].iterrows():
-    for index, row in df[3:5].iterrows():
+    for index, row in df[4:6].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"], width=350)
